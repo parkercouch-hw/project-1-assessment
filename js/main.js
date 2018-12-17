@@ -40,7 +40,7 @@ const subtract = (a, b) => a - b;
 // Returns a function to be used in a click event listener
 const updateCounterTotal = (input, operation, display) => (e) => {
   e.target.blur();
-  // Input is number so no need to check if a number
+  // Input is type=number so no need to check if a number
   counterTotal = operation(counterTotal, Number.parseInt(input.value));
   changeColor(counterTotal, display);
   display.textContent = counterTotal;
